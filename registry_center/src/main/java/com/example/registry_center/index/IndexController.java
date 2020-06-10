@@ -1,0 +1,14 @@
+package com.example.registry_center.index;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class IndexController {
+
+    @RequestMapping(value = "/test",method = {RequestMethod.GET,RequestMethod.POST})
+    public String  index(){
+        return "hello, docker!";
+    }
+}
